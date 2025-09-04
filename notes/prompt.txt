@@ -1,0 +1,24 @@
+My goal is to build a multimodal retrieval augmented generation (RAG) system that can process both text and images from PDF documents.
+The system should be able to extract text and images from the PDFs, chunk the text into manageable pieces, and then embed both the text chunks and image descriptions into a vector store for efficient retrieval.
+
+1. The text extracted from the pdf will be chunked into chunks of 100 with an overlap of 50.
+2. These chunks will then be embedded themselves.
+3. As for the images extracted, save them to a directory named imgs/ first.
+4. Each image will have a description provided in a csv file, use these descriptions instead of generating a summary for each.
+5. These descriptions will then be embedded as is.
+
+The embeddings need to be stored to a vectorstore (ChromaDB) and the originals (chunked text and images along with their descriptions) need to be stored to a docstore.
+
+The originals need to be stored in such a manner that when a user queries, the originals are returned properly, for example, if I have processed a resume and queried - "Tell me about <name-of-person>." I would expect any text chunk that correlates to him, say, his about sections' chunks and his image if the description of the image is about him.
+
+First give me a detailed process flow, explaining each and every step in detail so that I can verify whether or not it aligns with what I have in mind and only after I give my explicit confirmation, you can start giving the the code to do so. 
+
+I will be running this on Windows 11 so help me setup my working directory and environment for the same as well.
+
+Also, give me python codes which are well structured when generating code. Make use of functions properly to make it modular.
+Also, format the print statements with one of - "|INFO|", "|WARNING|" or "|ERROR|".
+Also, make sure to use f-strings for formatting wherever necessary.
+Also, make sure to use try-except blocks wherever necessary to catch exceptions and print them out in a user friendly manner.
+Also, include docstrings for each function to explain what it does.
+
+Go.
