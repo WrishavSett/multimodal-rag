@@ -7,6 +7,8 @@ The system should be able to extract text and images from the PDFs, chunk the te
 4. Each image will have a description provided in a csv file, use these descriptions instead of generating a summary for each.
 5. These descriptions will then be embedded as is.
 
+For embeddings use T5 by sentence-transformer for better semantic understanding.
+
 The embeddings need to be stored to a vectorstore (ChromaDB) and the originals (chunked text and images along with their descriptions) need to be stored to a docstore.
 
 The originals need to be stored in such a manner that when a user queries, the originals are returned properly, for example, if I have processed a resume and queried - "Tell me about <name-of-person>." I would expect any text chunk that correlates to him, say, his about sections' chunks and his image if the description of the image is about him.
