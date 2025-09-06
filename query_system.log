@@ -1,0 +1,29 @@
+2025-09-06 15:37:01,066 - INFO - Starting Multimodal RAG Query Engine
+2025-09-06 15:37:01,067 - INFO - Initializing embedding model...
+2025-09-06 15:37:01,067 - INFO - Load pretrained SentenceTransformer: ./models/sentence-transformers/all-MiniLM-L6-v2
+2025-09-06 15:37:01,968 - INFO - Use pytorch device_name: cuda
+2025-09-06 15:37:02,107 - INFO - Model initialized successfully
+2025-09-06 15:37:02,107 - INFO - Connecting to ChromaDB...
+2025-09-06 15:37:02,131 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-09-06 15:37:02,265 - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2025-09-06 15:37:02,276 - INFO - Connected to collection 'multimodal_collection' with 7 items
+2025-09-06 15:37:07,511 - INFO - Processing query: What programming languages does Wrishav know?
+2025-09-06 15:37:07,511 - INFO - Query intent classified as: factual
+2025-09-06 15:37:08,725 - WARNING - Number of requested results 10 is greater than number of elements in index 7, updating n_results = 7
+2025-09-06 15:37:08,764 - ERROR - Failed to send telemetry event CollectionQueryEvent: capture() takes 1 positional argument but 3 were given
+2025-09-06 15:37:08,766 - INFO - Reranked 7 results, returning top 5
+2025-09-06 15:37:08,766 - INFO - Logged query analytics: What programming languages does Wrishav know?...
+2025-09-06 15:37:08,766 - INFO - Query processed successfully in 1.256s
+2025-09-06 15:37:40,318 - INFO - Processing query: Show me the professional photo
+2025-09-06 15:37:40,318 - INFO - Query intent classified as: image_focused
+2025-09-06 15:37:40,330 - WARNING - Number of requested results 10 is greater than number of elements in index 7, updating n_results = 7
+2025-09-06 15:37:40,333 - INFO - Reranked 7 results, returning top 5
+2025-09-06 15:37:40,334 - INFO - Logged query analytics: Show me the professional photo...
+2025-09-06 15:37:40,335 - INFO - Query processed successfully in 0.016s
+2025-09-06 15:38:12,318 - INFO - Processing query: Compare Wrishav's education and work experience
+2025-09-06 15:38:12,319 - INFO - Query intent classified as: comparison
+2025-09-06 15:38:12,330 - WARNING - Number of requested results 10 is greater than number of elements in index 7, updating n_results = 7
+2025-09-06 15:38:12,333 - INFO - Reranked 7 results, returning top 5
+2025-09-06 15:38:12,334 - INFO - Logged query analytics: Compare Wrishav's education and work experience...
+2025-09-06 15:38:12,334 - INFO - Query processed successfully in 0.014s
+2025-09-06 15:39:04,983 - INFO - User requested exit

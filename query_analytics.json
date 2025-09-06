@@ -1,0 +1,39 @@
+{
+  "queries": [
+    {
+      "timestamp": "2025-09-06T15:37:08.766875",
+      "query": "What programming languages does Wrishav know?",
+      "query_intent": "factual",
+      "results_count": 5,
+      "processing_time": 1.2556841373443604,
+      "user_feedback": null
+    },
+    {
+      "timestamp": "2025-09-06T15:37:40.334907",
+      "query": "Show me the professional photo",
+      "query_intent": "image_focused",
+      "results_count": 5,
+      "processing_time": 0.015985727310180664,
+      "user_feedback": null
+    },
+    {
+      "timestamp": "2025-09-06T15:38:12.333056",
+      "query": "Compare Wrishav's education and work experience",
+      "query_intent": "comparison",
+      "results_count": 5,
+      "processing_time": 0.014352083206176758,
+      "user_feedback": null
+    }
+  ],
+  "stats": {
+    "total_queries": 3,
+    "intent_distribution": {
+      "factual": 1,
+      "image_focused": 1,
+      "comparison": 1
+    },
+    "avg_processing_time": 0.42867398262023926,
+    "recent_queries_24h": 3,
+    "last_updated": "2025-09-06T15:38:12.333056"
+  }
+}
