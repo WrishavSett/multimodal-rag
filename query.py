@@ -14,7 +14,7 @@ from functools import wraps
 VECTOR_STORE_DIR = "vector_store"
 COLLECTION_NAME = "multimodal_collection"
 EMBEDDING_MODEL_NAME = "./models/sentence-transformers/all-MiniLM-L6-v2"
-N_RESULTS = 20  # Number of results to retrieve
+N_RESULTS = 3  # Number of results to retrieve
 
 # Suppress warnings
 warnings.filterwarnings("ignore", category=UserWarning, message="A NumPy version >=1.16.5 and <1.23.0 is required for this version of SciPy*")
