@@ -1,13 +1,13 @@
 My goal is to build a multimodal retrieval augmented generation (RAG) system that can process both text and images from PDF documents.
 The system should be able to extract text and images from the PDFs, chunk the text into manageable pieces, and then embed both the text chunks and image descriptions into a vector store for efficient retrieval.
 
-1. The text extracted from the pdf will be chunked into chunks of 100 with an overlap of 50.
+1. The text extracted from the pdf must be chunked so that there is some meaning to those chunks (Also, provide me better chunking strategies for me to go through and choose from if possible.).
 2. These chunks will then be embedded themselves.
 3. As for the images extracted, save them to a directory named imgs/ first.
-4. Each image will have a description provided in a csv file, use these descriptions instead of generating a summary for each.
+4. Each image will have a description provided in a csv file (with headers as image_path and description), use these descriptions instead of generating a summary for each.
 5. These descriptions will then be embedded as is.
 
-For embeddings use T5 by sentence-transformer for better semantic understanding.
+For embeddings use T5 by sentence-transformer for better semantic understanding (Also, let me know of other, better models if possible.).
 
 The embeddings need to be stored to a vectorstore (ChromaDB) and the originals (chunked text and images along with their descriptions) need to be stored to a docstore.
 
