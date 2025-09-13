@@ -234,9 +234,9 @@ def calculate_quality_bonus(content: str, metadata: dict) -> float:
         word_count = len(content.split())
         
         # Bonus for optimal text length
-        if 50 <= word_count <= 200:
+        if 10 <= word_count <= 100:
             bonus += 0.1
-        elif word_count < 20:  # Penalty for very short chunks
+        elif word_count < 10:  # Penalty for very short chunks
             bonus -= 0.2
             
         # Bonus for well-structured content

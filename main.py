@@ -21,8 +21,8 @@ COLLECTION_NAME = "multimodal_collection"
 EMBEDDING_MODEL_NAME = "./models/sentence-transformers/all-MiniLM-L6-v2"
 
 # Text chunking configuration
-CHUNK_SIZE = 1000
-MIN_CHUNK_SIZE = 100
+CHUNK_SIZE = 100
+MIN_CHUNK_SIZE = 10
 
 # --- 2. LOGGING AND ERROR HANDLING ---
 
@@ -83,7 +83,7 @@ def process_pdf(pdf_path: Path) -> tuple[str, list[str]]:
                     # Extract text
                     page_text = page.get_text()
                     if page_text.strip():  # Only add non-empty text
-                        full_text += page_text + "\n"
+                        full_text += page_text + "\n\n\n"
                         logging.debug(f"Extracted text from page {page_num}")
 
                     # Extract images
@@ -119,7 +119,7 @@ def process_pdf(pdf_path: Path) -> tuple[str, list[str]]:
     logging.info(f"Successfully processed {pdf_path.name}: {len(full_text)} chars text, {len(image_paths)} images")
     return full_text, image_paths
 
-def semantic_chunk_text(text: str, max_chunk_size: int = 150, min_chunk_size: int = 50) -> list[str]:
+def semantic_chunk_text(text: str, max_chunk_size: int = 100, min_chunk_size: int = 10) -> list[str]:
     """
     Enhanced text chunking that maintains semantic coherence by respecting
     sentence boundaries and paragraph breaks.
@@ -317,7 +317,7 @@ def main():
                         'source': pdf_path.name,
                         'type': 'image',
                         'image_path': img_path,
-                        'description_length': len(description) #len(description.split())
+                        'description_length': len(description.split())
                     })
                     all_ids.append(str(uuid.uuid4()))
                     logging.debug(f"Added image description for: {img_filename}")
