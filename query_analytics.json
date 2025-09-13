@@ -23,17 +23,33 @@
       "results_count": 5,
       "processing_time": 0.014352083206176758,
       "user_feedback": null
+    },
+    {
+      "timestamp": "2025-09-13T12:41:27.642678",
+      "query": "give me wrishavs photo",
+      "query_intent": "image_focused",
+      "results_count": 5,
+      "processing_time": 4.909712553024292,
+      "user_feedback": null
+    },
+    {
+      "timestamp": "2025-09-13T12:42:11.606619",
+      "query": "tell me about wrishavs projects",
+      "query_intent": "factual",
+      "results_count": 5,
+      "processing_time": 0.027155160903930664,
+      "user_feedback": null
     }
   ],
   "stats": {
-    "total_queries": 3,
+    "total_queries": 5,
     "intent_distribution": {
-      "factual": 1,
-      "image_focused": 1,
+      "factual": 2,
+      "image_focused": 2,
       "comparison": 1
     },
-    "avg_processing_time": 0.42867398262023926,
-    "recent_queries_24h": 3,
-    "last_updated": "2025-09-06T15:38:12.333056"
+    "avg_processing_time": 1.2445779323577881,
+    "recent_queries_24h": 2,
+    "last_updated": "2025-09-13T12:42:11.606619"
   }
 }

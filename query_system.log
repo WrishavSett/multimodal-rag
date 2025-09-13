@@ -27,3 +27,36 @@
 2025-09-06 15:38:12,334 - INFO - Logged query analytics: Compare Wrishav's education and work experience...
 2025-09-06 15:38:12,334 - INFO - Query processed successfully in 0.014s
 2025-09-06 15:39:04,983 - INFO - User requested exit
+2025-09-13 12:40:20,672 - INFO - Starting Multimodal RAG Query Engine
+2025-09-13 12:40:20,693 - INFO - Initializing embedding model...
+2025-09-13 12:40:20,693 - INFO - Load pretrained SentenceTransformer: ./models/sentence-transformers/all-MiniLM-L6-v2
+2025-09-13 12:40:27,169 - INFO - Use pytorch device_name: cuda
+2025-09-13 12:40:27,612 - INFO - Model initialized successfully
+2025-09-13 12:40:27,612 - INFO - Connecting to ChromaDB...
+2025-09-13 12:40:27,783 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-09-13 12:40:28,307 - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2025-09-13 12:40:28,337 - INFO - Connected to collection 'multimodal_collection' with 7 items
+2025-09-13 12:40:47,664 - INFO - Interrupted by user
+2025-09-13 12:40:56,866 - INFO - Starting Multimodal RAG Query Engine
+2025-09-13 12:40:56,866 - INFO - Initializing embedding model...
+2025-09-13 12:40:56,866 - INFO - Load pretrained SentenceTransformer: ./models/sentence-transformers/all-MiniLM-L6-v2
+2025-09-13 12:40:57,798 - INFO - Use pytorch device_name: cuda
+2025-09-13 12:40:58,009 - INFO - Model initialized successfully
+2025-09-13 12:40:58,010 - INFO - Connecting to ChromaDB...
+2025-09-13 12:40:58,057 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-09-13 12:40:58,235 - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2025-09-13 12:40:58,252 - INFO - Connected to collection 'multimodal_collection' with 7 items
+2025-09-13 12:41:22,732 - INFO - Processing query: give me wrishavs photo
+2025-09-13 12:41:22,733 - INFO - Query intent classified as: image_focused
+2025-09-13 12:41:27,568 - WARNING - Number of requested results 10 is greater than number of elements in index 7, updating n_results = 7
+2025-09-13 12:41:27,641 - ERROR - Failed to send telemetry event CollectionQueryEvent: capture() takes 1 positional argument but 3 were given
+2025-09-13 12:41:27,642 - INFO - Reranked 7 results, returning top 5
+2025-09-13 12:41:27,649 - INFO - Logged query analytics: give me wrishavs photo...
+2025-09-13 12:41:27,650 - INFO - Query processed successfully in 4.910s
+2025-09-13 12:42:11,579 - INFO - Processing query: tell me about wrishavs projects
+2025-09-13 12:42:11,580 - INFO - Query intent classified as: factual
+2025-09-13 12:42:11,601 - WARNING - Number of requested results 10 is greater than number of elements in index 7, updating n_results = 7
+2025-09-13 12:42:11,606 - INFO - Reranked 7 results, returning top 5
+2025-09-13 12:42:11,608 - INFO - Logged query analytics: tell me about wrishavs projects...
+2025-09-13 12:42:11,609 - INFO - Query processed successfully in 0.027s
+2025-09-13 12:43:00,538 - INFO - User requested exit
