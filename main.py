@@ -21,8 +21,8 @@ COLLECTION_NAME = "multimodal_collection"
 EMBEDDING_MODEL_NAME = "./models/sentence-transformers/all-MiniLM-L6-v2"
 
 # Text chunking configuration
-CHUNK_SIZE = 150
-MIN_CHUNK_SIZE = 50
+CHUNK_SIZE = 1000
+MIN_CHUNK_SIZE = 100
 
 # --- 2. LOGGING AND ERROR HANDLING ---
 

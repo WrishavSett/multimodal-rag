@@ -1,0 +1,48 @@
+2025-09-13 16:53:53,012 - INFO - Starting Multimodal RAG Query Engine
+2025-09-13 16:53:53,012 - INFO - Initializing embedding model...
+2025-09-13 16:53:53,012 - INFO - Load pretrained SentenceTransformer: ./models/sentence-transformers/all-MiniLM-L6-v2
+2025-09-13 16:53:53,861 - INFO - Use pytorch device_name: cuda
+2025-09-13 16:53:54,003 - INFO - Model initialized successfully
+2025-09-13 16:53:54,003 - INFO - Connecting to ChromaDB...
+2025-09-13 16:53:54,036 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-09-13 16:53:54,186 - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2025-09-13 16:53:54,199 - INFO - Connected to collection 'multimodal_collection' with 195 items
+2025-09-13 16:54:05,984 - INFO - Processing query: What does NAGFORM stand for?
+2025-09-13 16:54:05,984 - INFO - Query intent classified as: factual
+2025-09-13 16:54:07,063 - ERROR - Failed to send telemetry event CollectionQueryEvent: capture() takes 1 positional argument but 3 were given
+2025-09-13 16:54:07,065 - INFO - Reranked 20 results, returning top 10
+2025-09-13 16:54:07,065 - INFO - Logged query analytics: What does NAGFORM stand for?...
+2025-09-13 16:54:07,065 - INFO - Query processed successfully in 1.081s
+2025-09-13 16:54:09,703 - INFO - User requested exit
+2025-09-13 16:56:24,181 - INFO - Starting Multimodal RAG Query Engine
+2025-09-13 16:56:24,182 - INFO - Initializing embedding model...
+2025-09-13 16:56:24,182 - INFO - Load pretrained SentenceTransformer: ./models/sentence-transformers/all-MiniLM-L6-v2
+2025-09-13 16:56:24,992 - INFO - Use pytorch device_name: cuda
+2025-09-13 16:56:25,124 - INFO - Model initialized successfully
+2025-09-13 16:56:25,125 - INFO - Connecting to ChromaDB...
+2025-09-13 16:56:25,149 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-09-13 16:56:25,277 - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2025-09-13 16:56:25,288 - INFO - Connected to collection 'multimodal_collection' with 195 items
+2025-09-13 16:56:42,752 - INFO - Processing query: What does NAGFORM stand for?
+2025-09-13 16:56:42,752 - INFO - Query intent classified as: factual
+2025-09-13 16:56:43,802 - ERROR - Failed to send telemetry event CollectionQueryEvent: capture() takes 1 positional argument but 3 were given
+2025-09-13 16:56:43,803 - INFO - Reranked 20 results, returning top 10
+2025-09-13 16:56:43,804 - INFO - Logged query analytics: What does NAGFORM stand for?...
+2025-09-13 16:56:43,804 - INFO - Query processed successfully in 1.051s
+2025-09-13 16:57:26,806 - INFO - User requested exit
+2025-09-13 16:57:33,116 - INFO - Starting Multimodal RAG Query Engine
+2025-09-13 16:57:33,116 - INFO - Initializing embedding model...
+2025-09-13 16:57:33,117 - INFO - Load pretrained SentenceTransformer: ./models/sentence-transformers/all-MiniLM-L6-v2
+2025-09-13 16:57:33,937 - INFO - Use pytorch device_name: cuda
+2025-09-13 16:57:34,070 - INFO - Model initialized successfully
+2025-09-13 16:57:34,071 - INFO - Connecting to ChromaDB...
+2025-09-13 16:57:34,094 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-09-13 16:57:34,219 - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2025-09-13 16:57:34,229 - INFO - Connected to collection 'multimodal_collection' with 195 items
+2025-09-13 16:57:35,848 - INFO - Processing query: What does NAGFORM stand for?
+2025-09-13 16:57:35,848 - INFO - Query intent classified as: factual
+2025-09-13 16:57:36,911 - ERROR - Failed to send telemetry event CollectionQueryEvent: capture() takes 1 positional argument but 3 were given
+2025-09-13 16:57:36,916 - INFO - Reranked 40 results, returning top 20
+2025-09-13 16:57:36,917 - INFO - Logged query analytics: What does NAGFORM stand for?...
+2025-09-13 16:57:36,917 - INFO - Query processed successfully in 1.068s
+2025-09-13 16:58:42,895 - INFO - User requested exit

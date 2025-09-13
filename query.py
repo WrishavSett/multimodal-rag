@@ -14,7 +14,7 @@ from functools import wraps
 VECTOR_STORE_DIR = "vector_store"
 COLLECTION_NAME = "multimodal_collection"
 EMBEDDING_MODEL_NAME = "./models/sentence-transformers/all-MiniLM-L6-v2"
-N_RESULTS = 5  # Number of results to retrieve
+N_RESULTS = 20  # Number of results to retrieve
 
 # Suppress warnings
 warnings.filterwarnings("ignore", category=UserWarning, message="A NumPy version >=1.16.5 and <1.23.0 is required for this version of SciPy*")
@@ -209,11 +209,13 @@ def calculate_intent_bonus(query_intent: str, metadata: dict, content: str) -> f
             
     elif query_intent == 'factual':
         if metadata['type'] == 'text':
-            bonus += 0.2  # Bonus for text content
+            bonus += 0.4  # Bonus for text content
             # Extra bonus for content with numbers, dates, or specific facts
             if re.search(r'\d{4}|\d+%|\d+\.\d+', content):
                 bonus += 0.1
-                
+        else:
+            bonus -= 0.15 # Penalize image descriptions for factual queries
+
     elif query_intent == 'explanation':
         if metadata['type'] == 'text':
             bonus += 0.15

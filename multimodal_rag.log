@@ -1,0 +1,35 @@
+2025-09-13 16:53:10,343 - INFO - Starting multimodal RAG ingestion process
+2025-09-13 16:53:10,344 - INFO - Setting up required directories...
+2025-09-13 16:53:10,344 - INFO - Directories 'imgs' and 'vector_store' are ready.
+2025-09-13 16:53:10,344 - INFO - Initializing the embedding model...
+2025-09-13 16:53:10,345 - INFO - Load pretrained SentenceTransformer: ./models/sentence-transformers/all-MiniLM-L6-v2
+2025-09-13 16:53:11,177 - INFO - Use pytorch device_name: cuda
+2025-09-13 16:53:11,311 - INFO - Model initialized successfully.
+2025-09-13 16:53:11,311 - INFO - Initializing ChromaDB vector store...
+2025-09-13 16:53:11,335 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-09-13 16:53:14,799 - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2025-09-13 16:53:15,090 - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2025-09-13 16:53:15,091 - INFO - ChromaDB is ready.
+2025-09-13 16:53:15,092 - INFO - Loading image descriptions from CSV...
+2025-09-13 16:53:15,271 - INFO - Loaded 172 image descriptions
+2025-09-13 16:53:15,275 - INFO - Found 1 PDF(s) to process.
+2025-09-13 16:53:15,276 - INFO - Processing: NAGFORM_MANUAL.pdf
+2025-09-13 16:53:15,411 - INFO - Processing PDF: NAGFORM_MANUAL.pdf with 107 pages
+2025-09-13 16:53:17,242 - INFO - Successfully processed NAGFORM_MANUAL.pdf: 196966 chars text, 172 images
+2025-09-13 16:53:17,263 - INFO - Created 32 semantic chunks from 2300 sentences
+2025-09-13 16:53:17,264 - INFO - Generated 32 semantic chunks.
+2025-09-13 16:53:17,266 - INFO - Found 172 images.
+2025-09-13 16:53:17,268 - WARNING - No description found for image: NAGFORM_MANUAL_page_94_img_1.png. It will be skipped.
+2025-09-13 16:53:17,268 - WARNING - No description found for image: NAGFORM_MANUAL_page_94_img_2.png. It will be skipped.
+2025-09-13 16:53:17,269 - WARNING - No description found for image: NAGFORM_MANUAL_page_100_img_3.png. It will be skipped.
+2025-09-13 16:53:17,269 - WARNING - No description found for image: NAGFORM_MANUAL_page_106_img_4.png. It will be skipped.
+2025-09-13 16:53:17,269 - WARNING - No description found for image: NAGFORM_MANUAL_page_107_img_2.png. It will be skipped.
+2025-09-13 16:53:17,270 - WARNING - No description found for image: NAGFORM_MANUAL_page_107_img_3.png. It will be skipped.
+2025-09-13 16:53:17,270 - WARNING - No description found for image: NAGFORM_MANUAL_page_107_img_4.png. It will be skipped.
+2025-09-13 16:53:17,270 - WARNING - No description found for image: NAGFORM_MANUAL_page_107_img_5.png. It will be skipped.
+2025-09-13 16:53:17,270 - WARNING - No description found for image: NAGFORM_MANUAL_page_107_img_6.png. It will be skipped.
+2025-09-13 16:53:17,271 - INFO - Generating embeddings for 195 documents in total (text chunks and image descriptions)...
+2025-09-13 16:53:19,096 - INFO - Storing documents and embeddings in ChromaDB...
+2025-09-13 16:53:19,746 - ERROR - Failed to send telemetry event CollectionAddEvent: capture() takes 1 positional argument but 3 were given
+2025-09-13 16:53:19,748 - INFO - Successfully added 195 items to the 'multimodal_collection' collection.
+2025-09-13 16:53:19,748 - INFO - Multimodal RAG ingestion process completed successfully in 9.41 seconds!
