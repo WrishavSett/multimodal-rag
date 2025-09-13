@@ -16,7 +16,7 @@ from functools import wraps
 PDFS_DIR = Path("pdfs")
 IMGS_DIR = Path("imgs")
 VECTOR_STORE_DIR = Path("vector_store")
-DESCRIPTIONS_CSV = "NAGFORM_MANUAL.csv"
+DESCRIPTIONS_CSV = "descriptions/NAGFORM_MANUAL.csv"
 COLLECTION_NAME = "multimodal_collection"
 EMBEDDING_MODEL_NAME = "./models/sentence-transformers/all-MiniLM-L6-v2"
 
