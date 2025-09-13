@@ -1,0 +1,173 @@
+Page number, Caption                                                                            , Image Description
+          0, NAGFORM's Way of Design                                                            , "Part Model in Rendered View, Sequence Design Results for  Ball Joint (part) and a Drawing of a Tool"
+          8, NAGFORM Desktop Window for User Interface                                          , This is main window where the User interfaces with NAGFORM program to perform various tasks
+         11, Help Menu Dialog Box                                                               , "User can select what user wants to know such as version of the program, Unit system being used,"
+           ,                                                                                    , "Topics covered in help, Read DXF file and calculate values of certain process parameters."
+         11, Help Topics                                                                        , "On left side, the image shows the various topics on which help is available and right side shows the "
+         11,                                                                                    , description of a selected topic on left.
+         11, Simple Calculator                                                                  , A simple calculator for determining surface area and weight of part and certain process parametrs such as length over
+           ,                                                                                    , diameter ratio in heading and area reduction in extrusion.
+         12, Surface Area Calculation                                                           , This image shows how to open the Simple Calculator and then get the surface area of any part being designed.
+         13, Various Primitives For Creating Part Model                                         , This image shows variuos primitives that are used in NAGFORM to create model of any part. Lower half of the image
+           ,                                                                                    , shows the hollow primitives used in create a part model
+         14, Created Primitives in Order of Joining to Form the Part                            , "This picture illustrate that to make any part, its primitives are created in the order in which these will be joined to "
+           ,                                                                                    , create the model. The process of joining create a Union which in this case is the desired part
+         16, "Modifying a Union to Create Corner Radius, Chamfer and Fillet"                    , "After creating the union, it can be modified to add corner radii, chamfers and fillets can be created in this dialog box"
+         17, Subtraction of Primitives from a Union                                             , "This picture shows the Dialog box used for subtracting primitives from a Union. Through the process of subtraction, "
+           ,                                                                                    , a hollow or a partiall hollow part is created.
+         17, Bringing in Part and/or Part Design Template in Current File                       , This image shows the procedure of starting the process of creating a part model and/or its sequence design from a
+           ,                                                                                    , template design.
+         18, Display of Dimensions of a part in NAGFORM                                         , The picture show automatic dimensioning of a part done in NAGFORM program
+         19, Assigning a Material to a Part in NAGFORM                                          , The right side of the picture shows the dialog box used in the program to assign a material to the part
+         22, Progression Design Setup Dialogbox                                                 , The dialogbox on right end of the picture is used to setup the various forming processes with their forming rules
+           ,                                                                                    , for Progression Design
+         23, Forming Rules of Forward Extrusion Process of Rod or Wire                          , This dialog box shows the various rules of forward extrusion process for rod or wire. These rules are preset but can be changed
+           ,                                                                                    , by the User
+         23, Progression Design Rules for the Heading Process of Rod or Wire                    , This picture shows some of the forming rules of the process of Heading of a rod or a wire. Rules are preset but can be modified
+           ,                                                                                    , by the User
+         23, Second and Final Page of Progression Design Rules for the                          , This picture shows remaining forming rules of the process of heading of a rod or wire. Rules are preset but can be
+           , Heading Process of Rod or Wire                                                     , modified by the User. The arrow drawn in this picture is to point out rules of slidiing punch
+         24, Progression Design Using a Radiused Preform                                        , Heading with sliding punch allows more forming by heading without buckling. This progression design is obtained
+           ,                                                                                    , using a sliding punch arrangement.
+         24, Design Rules of the Trimming Process                                               , This pictures shows the rules for the trimming process. Crash trimming is a special process used in forming
+           ,                                                                                    , "hex feature of bolts, that combines forming with trimmimg "
+         24, Progression Design of a Double End Bolt                                            , This picture shows the forming sequence of cold forging a double end hex bolt. The design uses crack tramming
+           ,                                                                                    , operation
+         25, Progression Design Dialog Box                                                      , The Auto Design dialog box on right end of the picture is used to select the desired parameters of the sequence design
+           ,                                                                                    , and get the sequence designs automatically created by NAGFORM program.
+         26, Design Summary and Machine Selection Summary                                       , The pictures shows the design summary and the machine selection summary that the user gets when the user selects
+           ,                                                                                    , this option in Auto Design dialog box
+         27, Selecting Automatic Design for a Specific Header Machine                           , This picture shows the designer can select to get sequence design for a specific header machine  for example one die
+           ,                                                                                    , two blow machine or two die three blow machine
+         28, Creation of Default Tooling for a Sequence Design                                  , The picture show the default tooling created for the selection design by the NAGFORM program
+         28, Creation of Analysis File for Simulation in NAGSIM.2D                              , "After sequence designs are created, the User can create FEA simulation file for NAGSIM.2D for any design "
+         29, Dialog Box for Maintaining a Database of Available Forging Machines                , "In NAGFORM, to determine which available machine can be used for any sequence design, User can create and maintain"
+           ,                                                                                    , a database to store information about the available forging machines
+         30, Form to Store Pertinent Information of Forging Machine                             , "In NAGFORM, this form is used to create and store specifications of a forging machine. These specifications are used to"
+           ,                                                                                    , determine if a machine is suitable for accomodating the tooling for a specific sequence design
+           , Display of Machine Selection related Details in NAGFORM                            , NAGFORM calculates the machine selection parameters for each forging machine to determine suitability
+         31, Display of Design Helper Selection                                                 , NAGFORM has a design helper utility to assist the designer in finding suitable sequence design for difficult parts
+         32, Design Helper Form Displaying All Methods to Get Designs                           , "When the Auto design does not come up with any design, Design helper presents techniques to relax rules to obtain"
+           ,                                                                                    , designs
+         33, Display of Results of Methods Used to Get Designs                                  , This form shows the final results of the calculations performed using Design Helper
+         33, Design Helper Form To Reduce Number of Sequence Designs                            , "If the Auto Design is giving too many designs, this form of Design helper displays the methods to reduce number of designs"
+         34, Design Helper Form To Reduce Number of Operations                                  , This form of Design Helper is for rducing the number of designs using less number of operations.
+           , Blank Size And Weight Calculation                                                  , "This form is used to get the blank size in terms of outside diameter and length, and also calculate the weight of the blank"
+         36, Method of Creating a Model of the Part                                             , This displays the method to use to construct the model of the part. First all primitives are created side by side and then
+           ,                                                                                    , joined to create the part model.
+         38, Designing Forming Sequences Using the Part Model                                   , "To auto design the forming sequences, the user selects the part to be designed, number of operation to use , diameter of  "
+           ,                                                                                    , the starting wire  or allows program to select.
+         39, Manual Design Set Up Form                                                          , NAGFORM has a section that allows the user to create the forming sequence manually. The user starts the manual design
+           ,                                                                                    , with this dialog box
+         40, Form for Manual Design Modifications                                               , This form is used to make changes in the manual design and to rearrange the forming operations if needed
+         41, Dialog Box for Preform Modifications                                               , This form is used to make modifications to the preform shape as needed by the user
+         41, Manual Design Using 'Design by Command'                                            , Another form of manual design that can be done in NAGFORM is by a proceedure called Design by Command.
+         43, Design by Command Setup Form                                                       , Here the user selects the part material. The Design by Command interaction between the program and user is
+           ,                                                                                    , written in a session (.ses)  file
+         43, Design by Command Main Dialog Box                                                  , The User interacts with the Design by Command module to create their own sequence design through a sequence of
+           ,                                                                                    , commands.
+         45, New File Dialog Box                                                                , This dialogbox comes up when User selects to creat a New file.
+         45, Dialog Box showing saved representative part files and their Session files         , User can select an existing session file if part being developed is very similar to saved part and differs mostly in dimensions
+         46, Example part for Sequence Design using Design by Command                           , 
+         46, Similar Part for Which Session File of Desired Design is Available                 , 
+         47, Figure 5 Displaying the Contents of Selected Session File                          , The picture is showing the procedure of using existing session file to create similar sequence design
+         51, Pictures shows Display of Information from Smart Database                          , The Smart database stores historic data of parts designed and manufactured. Analysis of the stored data shows
+           ,                                                                                    , information shown in the pictures
+         52, Starting Smart Database                                                            , How To Open Smart Database Dialogbox
+         52, Smart Database Display                                                             , The display shows functions of Smart Dialog Box
+         52, Save Data in Smalrt Database                                                       , This dialog box shows the data that can be saved
+         53, Details of User Record                                                             , This shows the various parts of the User Record that can be saved
+         54, Form to Maintain Lessons Learnt                                                    , "In this form, User can write, modify and save lessions learnt"
+         55, Information To Maintain at Quoting Stage and Manufacuring Stage                    , The dialog box shows the information saved in a record at quoting stage and at Manufacturing Stage
+         56, Summary of Records in Smart Database                                               , This form shows the summary of records that are stored in Smart DB
+         57, Search of Information in Smart Database                                            , This multi tab dialog box of Smart Database can be used to search various data saved in Smart Database
+         58, Display of  Material Usage from Records of Smart Database                          , 
+         59, Plot of Frequency of Usage of Materials From Smart Database                        , 
+         59, Plot of Wire Usage from Search of Smart Database                                   , 
+         60, Search of Usage of Forming Machines  in Smart Database                             , 
+         60, Options of Search Related to Cost In Smart Database                                , 
+         61, Image Shows Options Related to Tool Life Search in Smart Database                  , 
+         61, Search of Lessons Learnt Using Smart Database                                      , 
+         62, Sequence Design Search For a Part Using Records of Smart Database                  , 
+         63, Image shows Part Search Capabilities of Smart Database                             , 
+         64, Standard Tooling Components in Tool Design Module of NAGFORM                       , These images show the standard components  for which Tool Drawing can be readily Created in NAGFORM. These
+           ,                                                                                    , standard components are used in Tooling Asseblies required for forming the wire or rod in stages in forming machines
+           ,                                                                                    , ( Note: This whole Tool Design Module is now part of NAGTOOL Program. All Further improvements are being made
+           ,                                                                                    , in NAGTOOL)
+         65, Standard Tooling Components in Tool Design Module of NAGFORM                       , (Further Development in NAGTOOL)
+         65, Image Displaying 'Auto Tool' Module of NAGFORM And Tool Bar                        , (Further Development in NAGTOOL)
+           ,                                                                                    , (Further Development in NAGTOOL)
+         65, Selection of Tool Component                                                        , (Further Development in NAGTOOL)
+         66, Creating  Tool Component by Entering Dimensions                                    , (Further Development in NAGTOOL)
+         66, Creating  Tool Component by Entering Dimensions                                    , (Further Development in NAGTOOL)
+         67, Adding Constraints on Dimensions                                                   , (Further Development in NAGTOOL)
+         68, Creating DXG Drawing from Tool Component Diemensions                               , (Further Development in NAGTOOL)
+         69, Drawing Preference Dialog Box                                                      , (Further Development in NAGTOOL)
+         70, Searching for Similar Tool Components                                              , (Further Development in NAGTOOL)
+         70, Construction of External Tool Component                                            , (Further Development in NAGTOOL)
+         71, Creating External DXF Tool                                                         , (Further Development in NAGTOOL)
+         71, Procedure to Create External DXF Tool                                              , (Further Development in NAGTOOL)
+         72, Setup for Constructing Tool Assemblies                                             , (Further Development in NAGTOOL)
+         72, Setup for  Tool assembly                                                           , (Further Development in NAGTOOL)
+         73, Procedure to Create Tool Assembly                                                  , (Further Development in NAGTOOL)
+         74, Inserting Tool Components in Tool Assembly                                         , (Further Development in NAGTOOL)
+         75, Commands to Facilitate Tool Assembly                                               , (Further Development in NAGTOOL)
+         76, Selection of a Tool Component From a Group of Tools                                , (Further Development in NAGTOOL)
+         76, Move a Tool Component From Current Position                                        , (Further Development in NAGTOOL)
+         76, Create a Mirror Copy of a Tool Component                                           , (Further Development in NAGTOOL)
+         77, Create a Dupilcate Copy of a Tool Compoment                                        , (Further Development in NAGTOOL)
+         77, Rename a Tool Component                                                            , (Further Development in NAGTOOL)
+         77, Draw a Tool With Hatch Lines                                                       , (Further Development in NAGTOOL)
+         78, Show Coordinates of any Entity of the Tool                                         , (Further Development in NAGTOOL)
+         78, Modify a Tool                                                                      , (Further Development in NAGTOOL)
+         79, Appying a Constraint to Align a Tool  to Centerline of Tool Assembly               , (Further Development in NAGTOOL)
+         79, Applying a Constraint to Align a Tool To Punch Face                                , (Further Development in NAGTOOL)
+         79, Aligning a Tool To Punch Line                                                      , (Further Development in NAGTOOL)
+         80, Mate Faces of Two Tools in Assembly                                                , (Further Development in NAGTOOL)
+         80, Mate Faces of Two Tools in Assembly - Another Image                                , (Further Development in NAGTOOL)
+         81, Equation Constraint Between a Tool and Other Tools in Assembly                     , (Further Development in NAGTOOL)
+         81, An Example of The Equation Constraint                                              , (Further Development in NAGTOOL)
+         82, Another Example of The Equation Constraint                                         , (Further Development in NAGTOOL)
+         82, Another Example of Using Constraint Through Equation                               , (Further Development in NAGTOOL)
+         82, Another Example of a Situation Where Equation Constraint is Applied                , (Further Development in NAGTOOL)
+         83, Deleting a Constraint                                                              , (Further Development in NAGTOOL)
+         83, Applying and Deleting Assenbly Dimensions                                          , (Further Development in NAGTOOL)
+         84, Creating DXF Drawings of Assembly And Tools                                        , (Further Development in NAGTOOL)
+         84, An Example of Tooling Assembly                                                     , (Further Development in NAGTOOL)
+         85, Auto Design of Tooling From Part Progression - in Development                      , (Further Development in NAGTOOL)
+         86, General Features - Preview of Part Geometry                                        , (Further Development in NAGTOOL)
+         87, General Fatures: Part Library - has NAGFORM Part Models of Cold Forged Parts       , 
+         87, General Features: Search Of Similar Parts                                          , 
+         88, General Features: 6 Lobe External and Internal Primitives                          , 
+         88, General Features: Adding Comments in Nagform                                       , 
+         89, General Features: Rendering                                                        , 
+         90, General Features: User's Database - Search of Similar Parts and Designs            , 
+         90, General Features: Tool Design Help                                                 , 
+         90, General Features: Multi Ring Assembly                                              , 
+         91, General Features: Multi Ring Assembly ( Contd)                                     , 
+         91, General Features: Interference Fit Calculations                                    , 
+         93, Tech. Paper:  Create and Use a Historic Knowledge Database of Parts and Designs (1), 
+         93, Tech. Paper:  Create and Use a Historic Knowledge Database of Parts and Designs (2), 
+         97, Nagform Enhancements: Auto Design - Ball Type Heading Preform                      , 
+         97, Nagform Enhancements: Auto Design - Example of Ball Type Heading Preform           , 
+         98, Nagform Enhancements: Auto Design - Another Example of Ball Type Heading Preform   , 
+         99, Nagform Enhancements: Auto Design - Auto Search of Similar Parts and Designs       , 
+        100, Nagform Enhancements: Model -Floating Menu  (Example 1)                            , 
+        100, Nagform Enhancements: Model -Floating Menu  (Example 2)                            , 
+        101, Nagform Enhancements: Model -Floating Menu  (Example 3)                            , 
+        101, Nagform Enhancements: Floating Menu in Auto Design                                 , 
+        102, Nagform Enhancements: Design By Command - Graphical Input and Design(Image 1)      , 
+        103, Nagform Enhancements: Design By Command - Graphical Input and Design(Image 2)      , 
+        103, Nagform Enhancements: Design By Command - Graphical Input and Design(Image 3)      , 
+        103, Nagform Enhancements: Design By Command - Graphical Input and Design (Image 4)     , 
+        104, Nagform Enhancements: Design By Command - Graphical Input and Design(Image 5)      , 
+        104, Nagform Enhancements: Design By Command - Graphical Input and Design(Image 6)      , 
+        104, Nagform Enhancements: Design By Command - Graphical Input and Design (Image 7)     , 
+        105, Nagform Enhancements: Design By Command - Graphical Input and Design(Image 8)      , 
+        105, Nagform Enhancements: Design By Command - Graphical Input and Design(Image 9)      , 
+        105, Nagform Enhancements: Design By Command - Graphical Input and Design (Image10)     , 
+        106, Nagform Enhancements: Design By Command - Graphical Input and Design(Image 11)     , 
+        106, Nagform Enhancements: Design By Command - Graphical Input and Design (Image12)     , 
+        106, Nagform Enhancements: Surface Area Calculations                                    , 
+        107, Nagform Enhancements: Other Improvement                                            , 
+        107, Nagform Enhancements: Integration with NAGSIM.2D / 3D                              , 

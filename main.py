@@ -16,7 +16,7 @@ from functools import wraps
 PDFS_DIR = Path("pdfs")
 IMGS_DIR = Path("imgs")
 VECTOR_STORE_DIR = Path("vector_store")
-DESCRIPTIONS_CSV = "test_image_descriptions.csv"
+DESCRIPTIONS_CSV = "NAGFORM_MANUAL.csv"
 COLLECTION_NAME = "multimodal_collection"
 EMBEDDING_MODEL_NAME = "./models/sentence-transformers/all-MiniLM-L6-v2"
 
@@ -78,6 +78,7 @@ def process_pdf(pdf_path: Path) -> tuple[str, list[str]]:
             logging.info(f"Processing PDF: {pdf_path.name} with {len(doc)} pages")
             
             for page_num, page in enumerate(doc):
+                page_num = page_num+1
                 try:
                     # Extract text
                     page_text = page.get_text()
@@ -88,6 +89,7 @@ def process_pdf(pdf_path: Path) -> tuple[str, list[str]]:
                     # Extract images
                     image_list = page.get_images(full=True)
                     for img_index, img in enumerate(image_list):
+                        img_index = img_index+1
                         try:
                             xref = img[0]
                             base_image = doc.extract_image(xref)
@@ -309,13 +311,13 @@ def main():
                 img_filename = os.path.basename(img_path)
                 description = descriptions_map.get(img_filename)
                 
-                if description:
+                if description and isinstance(description, str): #if description:
                     all_docs.append(description) # We embed the description, not the image itself
                     all_metadatas.append({
                         'source': pdf_path.name,
                         'type': 'image',
                         'image_path': img_path,
-                        'description_length': len(description.split())
+                        'description_length': len(description) #len(description.split())
                     })
                     all_ids.append(str(uuid.uuid4()))
                     logging.debug(f"Added image description for: {img_filename}")

@@ -1,3 +1,5 @@
+# Redundant
+ 
 from PyPDF2 import PdfReader
 from PIL import Image
 import fitz  # PyMuPDF
